@@ -1,0 +1,66 @@
+index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Azul Oscuro</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/moderne-fraktur" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Moderne Fraktur à', serif;
+    }
+  </style>
+</head>
+<body class="bg-blue-900 text-white">
+  <header class="p-6 text-center border-b border-white">
+    <h1 class="text-4xl font-bold">Mi Blog Azul Oscuro</h1>
+    <nav class="mt-4">
+      <a href="#audiovisuales" class="mx-2 hover:underline">Audiovisuales</a>
+      <a href="#textos" class="mx-2 hover:underline">Textos</a>
+      <a href="#mixtos" class="mx-2 hover:underline">Mixtos</a>
+    </nav>
+  </header>
+
+  <main class="p-6 space-y-16">
+
+    <!-- Sección Audiovisual -->
+    <section id="audiovisuales">
+      <h2 class="text-3xl font-semibold mb-4">Sección Audiovisual</h2>
+      <p class="mb-2">Subí tus archivos de imagen o video aquí.</p>
+      <input type="file" accept="image/*,video/*" multiple class="block mb-4 text-black">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-white text-blue-900 p-2 text-center">Archivo Audiovisual</div>
+      </div>
+    </section>
+
+    <!-- Sección Textos -->
+    <section id="textos">
+      <h2 class="text-3xl font-semibold mb-4">Sección de Textos</h2>
+      <p class="mb-2">Subí tus archivos de texto aquí.</p>
+      <input type="file" accept=".txt,.pdf,.doc,.docx" multiple class="block mb-4 text-black">
+      <div class="space-y-2">
+        <div class="bg-white text-blue-900 p-2">Archivo de Texto</div>
+      </div>
+    </section>
+
+    <!-- Sección Mixta -->
+    <section id="mixtos">
+      <h2 class="text-3xl font-semibold mb-4">Sección de Contenido Mixto</h2>
+      <p class="mb-2">Subí archivos de texto o audiovisuales.</p>
+      <input type="file" accept="image/*,video/*,.txt,.pdf,.doc,.docx" multiple class="block mb-4 text-black">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-white text-blue-900 p-2">Archivo Mixto</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="p-4 text-center border-t border-white mt-10">
+    <p>&copy; 2025 Mi Blog Azul Oscuro</p>
+  </footer>
+</body>
+</html>
+
+
