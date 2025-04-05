@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Blog Azul y Blanco</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-blue-800">
+  <header class="p-6 bg-blue-800 text-white text-center">
+    <h1 class="text-3xl font-bold">Mi Blog</h1>
+    <nav class="mt-4">
+      <a href="#textos" class="mx-2 hover:underline">Textos</a>
+      <a href="#galeria" class="mx-2 hover:underline">Galería</a>
+      <a href="#zona-oculta" class="mx-2 hover:underline">Zona Oculta</a>
+    </nav>
+  </header>
+
+  <main class="p-4 space-y-12">
+    <!-- Sección de Textos -->
+    <section id="textos">
+      <h2 class="text-2xl font-semibold mb-2">Publicaciones de Texto</h2>
+      <textarea placeholder="Escribe aquí..." class="w-full p-2 border border-blue-800 rounded"></textarea>
+      <button class="mt-2 px-4 py-2 bg-blue-800 text-white rounded hover:bg-blue-700">Publicar</button>
+    </section>
+
+    <!-- Sección de Galería -->
+    <section id="galeria">
+      <h2 class="text-2xl font-semibold mb-2">Galería de Fotos y Videos</h2>
+      <input type="file" accept="image/*,video/*" multiple class="block mb-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- Aquí se mostrarán las imágenes/videos subidos -->
+        <div class="bg-blue-100 p-2 text-center">Archivo 1</div>
+        <div class="bg-blue-100 p-2 text-center">Archivo 2</div>
+      </div>
+    </section>
+
+    <!-- Zona Oculta -->
+    <section id="zona-oculta">
+      <h2 class="text-2xl font-semibold mb-2">Zona Oculta 🔒</h2>
+      <p class="mb-2">Contenido sensible. Ingresa la clave para acceder.</p>
+      <input type="password" placeholder="Clave" class="p-2 border border-blue-800 rounded">
+      <button class="mt-2 px-4 py-2 bg-blue-800 text-white rounded hover:bg-blue-700">Ingresar</button>
+    </section>
+  </main>
+
+  <footer class="p-4 text-center bg-blue-800 text-white mt-10">
+    <p>&copy; 2025 Mi Blog</p>
+  </footer>
+</body>
+</html>
